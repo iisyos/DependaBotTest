@@ -4,6 +4,6 @@
     "jquery": "^3.4.1",
     "minimist": "^1.2.0",
     "node-fetch": "^2.6.0",
-    "socket.io": "^2.3.0"
+    "socket.io": "^4.8.1"
   }
 }
