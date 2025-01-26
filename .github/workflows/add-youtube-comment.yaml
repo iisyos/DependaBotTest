@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
-      - uses: iisyos/youtube-linker-action
+      - uses: iisyos/youtube-linker-action@main
         with:
           youtube_urls: |
             https://www.youtube.com/shorts/ThyyFk4tGa0
