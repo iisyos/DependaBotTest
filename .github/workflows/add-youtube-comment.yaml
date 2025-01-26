@@ -1,0 +1,21 @@
+name: Add YouTube Comment
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    steps:
+      - uses: iisyos/youtube-linker-action
+        with:
+          youtube_urls: |
+            https://www.youtube.com/shorts/ThyyFk4tGa0
+            https://www.youtube.com/shorts/T6RFDdT4viQ
+            https://www.youtube.com/shorts/WUfHauv9cgo
+            https://www.youtube.com/shorts/qJMmVLXw1ak
+            https://www.youtube.com/shorts/Yc4hWFuiOt4
+            https://www.youtube.com/shorts/r7aMeLA4JDg
+            https://www.youtube.com/shorts/ifa_BSKB_Kg
+          github_token: ${{ secrets.GITHUB_TOKEN }}
